@@ -90,7 +90,7 @@ export default function Home() {
                 lg:flex lg:justify-center lg:space-x-10 xl:space-x-14 `}>
                     <a href="/" title="" className="text-base font-medium text-gray-300  focus:text-white hover:text-white"> Home </a>
 
-                    <a href="/about-me" title="" className="text-base font-medium text-gray-300  focus:text-white hover:text-white"> Experience </a>
+                    <a href="/#/about-me" title="" className="text-base font-medium text-gray-300  focus:text-white hover:text-white"> Experience </a>
 
                     <a href="mailto:we5t323214@gmail.com" title="Documentation" className="text-base font-medium text-gray-300  focus:text-white hover:text-white">Contact</a>
                 </div>
@@ -287,55 +287,55 @@ export default function Home() {
 export const products = [
   {
     title: "Police CAD",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: SCad1
   },
   {
     title: "BTD Phone Shop",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: BTD
   },
   {
     title: "Code Documentation",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: NCDocs
   },
 
   {
     title: "Community Forum",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: NCForum
   },
 
   {
     title: "E-Shop",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: CaseShop
   },
 
   {
     title: "BTD Phone Shop",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: BTD
   },
   {
     title: "Community Forum",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: NCForum
   },
   {
     title: "E-Shop",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: CaseShop
   },
   {
     title: "Code Documentation",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: NCDocs
   },
   {
     title: "Police CAD",
-    link: "/about-me",
+    link: "/#/about-me",
     thumbnail: SCad1
   },
 ]
