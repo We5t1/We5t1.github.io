@@ -19,26 +19,6 @@ const App = () => {
   const [filteredCards, setFilteredCards] = useState([]);
 
   useEffect(() => {
-    const importAll = (context) => context.keys().map(context);
-    let cardData = importAll(
-     // require.context("./profileData", false, /\.json$/)
-    );
-
-    cardData = cardData.sort((a, b) => {
-    });
-
-    setCards(cardData);
-  }, []);
-
-  const handleCardClick = (card) => {
-    setSelectedCard(card);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedCard(null);
-  };
-
-  useEffect(() => {
     filterCards();
     // eslint-disable-next-line
   }, [cards, searchTerm]);
