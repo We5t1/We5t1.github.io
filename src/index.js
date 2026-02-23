@@ -5,6 +5,7 @@ import './index.css';
 //import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
+import { HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -41,7 +41,7 @@ const App = () => {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/" element={<Home />} />
           <Route
-  path="/#/about-me"
+      path="/about-me"
   element={
     <>
       <Navbar

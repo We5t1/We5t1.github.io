@@ -1,4 +1,5 @@
 import { SiGithub, SiGmail, SiIndeed, SiLinkedin } from "react-icons/si";
+import { Link } from "react-router-dom";
 
  const footerLinks = [
     {
@@ -92,15 +93,15 @@ const FooterMain = () => {
             <div className="mt-6 flex justify-center lg:justify-start gap-4">
               {footerLinks.map(footerLink => (
                 <li key={footerLink.link}>
-                  <a
-                    href={footerLink.link}
+                  <Link
+                    to={footerLink.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={footerLink.hover}
                     aria-label={`footer link of ${footerLink.link}`}
                   >
                     {footerLink.icon}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </div>
@@ -116,15 +117,15 @@ const FooterMain = () => {
                   <ul>
                     {section.child.map((link, linkIndex) => (
                       <li key={linkIndex} className="pt-2">
-                        <a
-                          href={link.link}
+                        <Link
+                          to={link.link}
                           className="hover:text-gray-300 "
                           rel="noopener noreferrer"
                           target="_blank"
                           aria-label="footer docs link"
                         >
                           {link.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -141,15 +142,15 @@ const FooterMain = () => {
                   <ul>
                     {section.child.map((link, linkIndex) => (
                       <li key={linkIndex} className="pt-2">
-                        <a
-                          href={link.link}
+                        <Link
+                          to={link.link}
                           className="hover:text-gray-300  "
                           rel="noopener noreferrer"
                           target="_blank"
                           aria-label="footer service link"
                         >
                           {link.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -158,8 +159,8 @@ const FooterMain = () => {
             </ul>
             <div className="mt-[25px] ">
               <div className="p-2 rounded-lg  mx-auto">
-                <a
-                  href="https://github.com/We5t1"
+                <Link
+                  to="https://github.com/We5t1"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub repository"
@@ -185,7 +186,7 @@ const FooterMain = () => {
                     ⭐GITHUB
                   </button>
  
-                </a>
+                </Link>
               </div>
             </div>
           </div>

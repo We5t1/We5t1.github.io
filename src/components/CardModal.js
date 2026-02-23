@@ -5,6 +5,7 @@ import {
   SiLinkedin,
   SiX,
 } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const CardModal = ({ card, onClose }) => {
   if (!card) {
@@ -85,58 +86,58 @@ const CardModal = ({ card, onClose }) => {
             </h3>
             <div className="flex items-center">
               {email !== "-" && (
-                <a
-                  href={`mailto:${email}`}
+                <Link
+                  to={`mailto:${email}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-2 text-red-500"
                 >
                   <SiGmail size={25} />
-                </a>
+                </Link>
               )}
 
               {x && x !== "-" && (
-                <a
-                  href={x}
+                <Link
+                  to={x}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-2 text-gray-300"
                 >
                   <SiX size={25} />
-                </a>
+                </Link>
               )}
 
               {linkedin !== "-" && (
-                <a
-                  href={linkedin}
+                <Link
+                  to={linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-2 text-blue-500"
                 >
                   <SiLinkedin size={25} />
-                </a>
+                </Link>
               )}
 
               {instagram && instagram !== "-" && (
-                <a
-                  href={instagram}
+                <Link
+                  to={instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-2 text-pink-500"
                 >
                   <SiInstagram size={25} />
-                </a>
+                </Link>
               )}
 
               {username !== "-" && (
-                <a
-                  href={`https://www.github.com/${username}/`}
+                <Link
+                  to={`https://www.github.com/${username}/`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mr-2 text-gray-300"
                 >
                   <SiGithub size={25} />
-                </a>
+                </Link>
               )}
             </div>
           </div>
@@ -147,24 +148,24 @@ const CardModal = ({ card, onClose }) => {
               External Links
             </h3>
             <div className="flex">
-              <a
-                href={livePortfolioLink}
+              <Link
+                to={livePortfolioLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-2 py-1 mr-2 text-white bg-purple-800 rounded-lg"
               >
                 Live Portfolio
-              </a>
+              </Link>
 
               {githubRepoLink !== "-" && (
-                <a
-                  href={githubRepoLink}
+                <Link
+                  to={githubRepoLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-2 py-1 text-black bg-white rounded-lg"
                 >
                   GitHub Repo
-                </a>
+                </Link>
               )}
             </div>
           </div>

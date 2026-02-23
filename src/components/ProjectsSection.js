@@ -12,6 +12,7 @@ import NCForum from "../images/NCForum.png";
 import NCForum2 from "../images/NCForum2.png";
 import SCad2 from "../images/SCad2.png";
 import SCad3 from "../images/SCad3.png";
+import { Link } from 'react-router-dom';
 
 export const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -87,13 +88,13 @@ export const ProjectsSection = () => {
 
               {/* Buttons Section */}
               <div className="flex flex-col gap-2 mt-auto">
-                <a
-                  href={project.github}
+                <Link
+                  to={project.github}
                   className="w-full flex items-center justify-center gap-2 py-2 px-4 text-sm bg-gradient-to-r from-green-500 to-yellow-500 text-white rounded-lg hover:opacity-90"
                 >
                   <Github className="h-4 w-4 flex-shrink-0" />
                   <span className="truncate">GitHub</span>
-                </a>
+                </Link>
                 <button
                   onClick={() => setSelectedProject(project)}
                   className="w-full flex items-center justify-center gap-2 py-2 px-4 text-sm border-2 border-green-500 text-green-500 rounded-lg hover:bg-green-50"

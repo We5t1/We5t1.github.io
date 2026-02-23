@@ -12,7 +12,8 @@ import { Computer } from "lucide-react";
 import { Languages } from "lucide-react";
 import { School } from "lucide-react";
 import FooterMain from "./components/New-footer";
-//import { Import } from "lucide-react";
+import { Link } from 'react-router-dom';
+
 export default function Home() {
   const getCurrentYear = () => new Date().getFullYear()
 
@@ -78,9 +79,9 @@ export default function Home() {
         <div className=" mx-auto sm:px-6 lg:px-8 xl:px-12">
             <div className="flex items-center justify-between h-16 lg:h-[72px]">
                 <div className="flex items-center flex-shrink-0">
-                <a class="flex items-center  no-underline hover:no-underline font-bold text-xl" href="/">
+                <Link class="flex items-center  no-underline hover:no-underline font-bold text-xl" href="/">
                   <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-500 m-10 md:m-0">W E 5 T</span>
-                </a>
+                </Link>
                 </div>
 
                 <div className={`absolute opacity-1  border border-zinc-600 border-t-0 h-12   top-0  right-0 flex items-center  justify-around md:justify-center md:gap-8 px-10 w-full bg-zinc-950/90 backdrop-blur-sm ${showNavbar ? "translate-y-16 z-10 opacity-1 " : "translate-y-0 -z-10 opacity-0 lg:opacity-100"}
@@ -88,11 +89,11 @@ export default function Home() {
 
                   lg:relative lg:border-none lg:h-min lg:translate-y-0 lg:z-0 lg:px-10 lg:w-min lg:bg-transparent lg:backdrop-blur-0 lg:gap-0
                 lg:flex lg:justify-center lg:space-x-10 xl:space-x-14 `}>
-                    <a href="/" title="" className="text-base font-medium text-gray-300  focus:text-white hover:text-white"> Home </a>
+                    <Link to="/" title="" className="text-base font-medium text-gray-300  focus:text-white hover:text-white"> Home </Link>
 
-                    <a href="/#/about-me" title="" className="text-base font-medium text-gray-300  focus:text-white hover:text-white"> Experience </a>
+                    <Link to="/about-me" title="" className="text-base font-medium text-gray-300  focus:text-white hover:text-white"> Experience </Link>
 
-                    <a href="mailto:we5t323214@gmail.com" title="Documentation" className="text-base font-medium text-gray-300  focus:text-white hover:text-white">Contact</a>
+                    <Link to="mailto:we5t323214@gmail.com" title="Documentation" className="text-base font-medium text-gray-300  focus:text-white hover:text-white">Contact</Link>
                 </div>
 
                 <div className="flex items-center justify-end space-x-5">
@@ -111,8 +112,8 @@ export default function Home() {
                     
 
                     <div class="group relative">
-                      <a
-                        href="https://github.com/We5t1"
+                      <Link
+                        to="https://github.com/We5t1"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="My GitHub"
@@ -121,7 +122,7 @@ export default function Home() {
                       <button className='text-gray-300'>
                       <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="w-8 hover:scale-100 duration-200 hover:stroke-white m-10 md:m-0"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                       </button>
-                      </a>
+                      </Link>
                       <span class="absolute -top-14 left-[50%] -translate-x-[50%] 
                       z-20 origin-left scale-0 px-3 rounded-lg border 
                       border-white bg-white py-2 text-sm font-bold
@@ -287,55 +288,55 @@ export default function Home() {
 export const products = [
   {
     title: "Police CAD",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: SCad1
   },
   {
     title: "BTD Phone Shop",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: BTD
   },
   {
     title: "Code Documentation",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: NCDocs
   },
 
   {
     title: "Community Forum",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: NCForum
   },
 
   {
     title: "E-Shop",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: CaseShop
   },
 
   {
     title: "BTD Phone Shop",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: BTD
   },
   {
     title: "Community Forum",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: NCForum
   },
   {
     title: "E-Shop",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: CaseShop
   },
   {
     title: "Code Documentation",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: NCDocs
   },
   {
     title: "Police CAD",
-    link: "/#/about-me",
+    link: "/about-me",
     thumbnail: SCad1
   },
 ]

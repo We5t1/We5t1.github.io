@@ -8,7 +8,7 @@ const workExperiences = [
     roles: [
       { 
         title: "Full Stack Software Developer", 
-        dates: "2022 – 2025",
+        dates: "05/2025 - 12/2025",
       }
     ]
   },
@@ -16,8 +16,8 @@ const workExperiences = [
     company: "DARTEN-IT Group",
     roles: [
       { 
-        title: "Lead Backend Software Developer", 
-        dates: "Jan 2025 - April 2025"
+        title: "Backend Software Engineer", 
+        dates: "02/2025 - 05/2025"
       }
     ]
   },
